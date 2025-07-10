@@ -2,6 +2,7 @@ import { SearchResponse } from 'types';
 import { getCookies } from './getCookie';
 import { write } from './write';
 import { uniqBy } from 'lodash';
+import 'dotenv/config'
 
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
@@ -26,8 +27,8 @@ type Category = {
     name: string,
     records: number,
 }
-const PER_PAGE = 50
-const PARSE_PAGES = 200
+const PER_PAGE = parseInt(process.env.PER_PAGE)
+const PARSE_PAGES = parseInt(process.env.PARSE_PAGES)
 
 console.log('Products to parse: ', PER_PAGE * PARSE_PAGES)
 

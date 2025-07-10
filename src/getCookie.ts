@@ -1,6 +1,7 @@
 import puppeteer from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 import randomUseragent from 'random-useragent';
+import 'dotenv/config'
 
 puppeteer.use(StealthPlugin());
 
@@ -11,7 +12,7 @@ export const getCookies = async () => {
 
     const browser = await puppeteer.launch({
         headless: false,
-        executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+        executablePath: process.env.CHROME_EXECUTABLE_PATH
     });
     const page = await browser.newPage();
 
