@@ -1,0 +1,52 @@
+[
+  {
+    "id": "7",
+    "name": "CANNED AND DRY",
+    "records": 2716
+  },
+  {
+    "id": "6",
+    "name": "FROZEN",
+    "records": 1561
+  },
+  {
+    "id": "8",
+    "name": "PAPER & DISP",
+    "records": 899
+  },
+  {
+    "id": "3",
+    "name": "MEATS",
+    "records": 718
+  },
+  {
+    "id": "2",
+    "name": "DAIRY PRODUCTS",
+    "records": 583
+  },
+  {
+    "id": "11",
+    "name": "PRODUCE",
+    "records": 483
+  },
+  {
+    "id": "5",
+    "name": "POULTRY",
+    "records": 312
+  },
+  {
+    "id": "12",
+    "name": "DISPENSER BEVERAGE",
+    "records": 196
+  },
+  {
+    "id": "9",
+    "name": "CHEMICAL/JANTRL",
+    "records": 186
+  },
+  {
+    "id": "4",
+    "name": "SEAFOOD",
+    "records": 180
+  }
+]
