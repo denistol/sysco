@@ -17,9 +17,10 @@ It:
 `write`: Utility to save data to disk.
 `uniqBy`: From Lodash, used to deduplicate categories.
 
-### 2. Constants
+### 2. ENV Constants
 `PER_PAGE = 50`: Number of products per API request.
 `PARSE_PAGES = 600`: Total number of pages to parse.
+`CHROME_EXECUTABLE_PATH=/Applications/Google Chrome.app/Contents/MacOS/Google Chrome` - Path to chrome executable
 
 ### 3. Core Functionality
 
@@ -55,4 +56,5 @@ It:
     - Unique category list to `data/categories`
 
 ## 🚀 Run
-- `pnpm install && pnpm run build && pnpm run start`
+1. Set relevant `CHROME_EXECUTABLE_PATH` to `.env`
+2. `pnpm install && pnpm run build && pnpm run start`
