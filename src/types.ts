@@ -1,4 +1,4 @@
-export type SearchResponse = {
+export type SyscoSearchResponse = {
   metaInfo: {
     originalQuery: {
       facets: {
@@ -103,4 +103,52 @@ export type SearchResponse = {
     isBestSeller: boolean;
     isFavorite: boolean;
   }>;
+};
+
+export type GraingerProduct = {
+    id: number,
+    category: string,
+    sku: string,
+    description: string,
+    image: string,
+    url: string,
+    status: string
+    attributeValues: string,
+    priceType: string
+    price: number
+    formattedPrice: string
+    uomLabel: string
+    source: string
+}
+
+export type GraingerRawProduct = {
+    id: number;
+    merchandisingCategoryId: number;
+    sku: string;
+    description: string;
+    manufacturerPartNumber: string;
+    isGroup: boolean;
+    images: {
+        url: string;
+    }[];
+    productDetailUrl: string;
+    isMerchandisingCategoryPrimary: boolean;
+    isBrowsable: boolean;
+    status: string;
+    complianceMessages: {
+        Green_Message?: string;
+        [key: string]: string | undefined;
+    };
+    sellInfo: string;
+    attributeValues: (number | string)[][];
+    priceData: {
+        type: string;
+        sell: {
+            price: number;
+            formattedPrice: string;
+            label: string;
+        };
+        uomLabel: string;
+        source: string;
+    };
 };
